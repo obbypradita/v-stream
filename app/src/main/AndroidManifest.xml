@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vstream">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.vstream.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_tv_desa_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_tv_desa_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.vstream.ui.BottomNavActivity"
+            android:theme="@style/SplashTheme"
+            android:configChanges="uiMode|orientation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vstream.ui.PopularMoviesActivity"
+            android:configChanges="uiMode|orientation" />
+        <activity
+            android:name="com.vstream.ui.PopularTvActivity"
+            android:configChanges="uiMode|orientation" />
+        <activity
+            android:name="com.vstream.ui.MovieDetailsActivity"
+            android:configChanges="uiMode|orientation" />
+        <activity
+            android:name="com.vstream.ui.TvDetailsActivity"
+            android:configChanges="uiMode|orientation" />
+        <activity
+            android:name="com.vstream.ui.SearchActivity"
+            android:configChanges="uiMode|orientation" />
+    </application>
+</manifest>
