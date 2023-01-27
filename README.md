@@ -28,5 +28,6 @@ api_key=YOUR_TMDB_API_KEY
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+
 ## Fork / Github
 https://github.com/Gopalakrishnan-V/netflix-clone
